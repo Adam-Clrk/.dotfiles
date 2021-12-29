@@ -1,0 +1,91 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.tips.enabled": false,
+    "breadcrumbs.enabled": true,
+    "git.confirmSync": false,
+    // "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+    "terminal.integrated.rendererType": "dom",
+    "timeline.showView": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.onIgnoredFiles": "warn",
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown"
+    ],
+    "typescript.surveys.enabled": false,
+    "liquid.format": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "java.configuration.runtimes": [
+        {
+            "default": true,
+            "name": "JavaSE-15",
+            "path": "~/software/jdk-15.0.2/"
+        }
+    ],
+    "maven.terminal.favorites": [
+        {
+            "command": "clean compile javafx:run",
+            "alias": "javafx run"
+        }
+    ],
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "_JAVA_AWT_WM_NONREPARENTING",
+            "value": "1"
+        }
+    ],
+    "maven.executable.preferMavenWrapper": false,
+    "python.languageServer": "Microsoft",
+    "java.server.launchMode": "Standard",
+    "python.linting.flake8Enabled": true,
+    "java.codeGeneration.generateComments": true,
+    "java.implementationsCodeLens.enabled": true,
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers",
+        "blocks"
+    ],
+    "problems.showCurrentInStatus": true,
+    "java.debug.settings.console": "internalConsole",
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.editor.tabCloseButton": "off",
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vetur.validation.templateProps": true,
+    "vetur.experimental.templateInterpolationService": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "python.formatting.provider": "yapf",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    // "maven.executable.path": "proxychains4\" \"mvn"
+}

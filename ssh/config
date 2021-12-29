@@ -1,0 +1,31 @@
+Host *
+    ServerAliveInterval 30
+    ServerAliveCountMax 2
+
+Host uglogin uglogin.ecs.soton.ac.uk
+    HostName uglogin.ecs.soton.ac.uk
+    User ahc2g20
+    PubkeyAuthentication no
+
+Host sotonproxy
+    HostName uglogin.ecs.soton.ac.uk
+    User ahc2g20
+    PubkeyAuthentication no
+	DynamicForward 127.0.0.1:9090
+	LocalForward 9500 discord.ecs.soton.ac.uk:9500
+	LocalForward 9501 discord.ecs.soton.ac.uk:9501
+
+Host comp1204
+	HostName comp1204
+	User ahc2g20
+	ProxyJump uglogin
+
+Host git.soton.ac.uk
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_rsa.soton
+
+Host github.com
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/git/github1/id_rsa
+
+Include ./other.config
